@@ -1,0 +1,6 @@
+.codex-work/
+.harness-logs/
+.harness-state/
+evals/**/results/
+node_modules/
+

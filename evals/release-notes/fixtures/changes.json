@@ -1,0 +1,23 @@
+[
+  {"id":"CHG-001","type":"feature","scope":"원장","summary":"월별 요약 필터 추가","userImpact":"선택한 월만 빠르게 확인할 수 있음"},
+  {"id":"CHG-002","type":"fix","scope":"CSV","summary":"빈 메모 파싱 수정","userImpact":"메모가 없어도 다음 열이 밀리지 않음"},
+  {"id":"CHG-003","type":"docs","scope":"가이드","summary":"첫 실행 예제 보강","userImpact":"초기 설정 절차를 쉽게 따라갈 수 있음"},
+  {"id":"CHG-004","type":"feature","scope":"예산","summary":"카테고리별 경고 표시","userImpact":"예산 초과 항목을 즉시 찾을 수 있음"},
+  {"id":"CHG-005","type":"fix","scope":"날짜","summary":"월 경계 시간대 처리","userImpact":"현지 날짜의 월이 바뀌지 않음"},
+  {"id":"CHG-006","type":"breaking","scope":"API","summary":"amount 문자열 입력 제거","userImpact":"금액은 숫자로 전달해야 함","migration":"Number(amount)로 변환 후 전달"},
+  {"id":"CHG-007","type":"feature","scope":"보고서","summary":"카테고리 정렬 옵션 추가","userImpact":"원하는 순서로 표를 볼 수 있음"},
+  {"id":"CHG-008","type":"fix","scope":"보고서","summary":"0원 항목 표시 수정","userImpact":"0원 항목도 누락되지 않음"},
+  {"id":"CHG-009","type":"docs","scope":"API","summary":"JSDoc 예제 추가","userImpact":"함수 사용법을 코드에서 확인할 수 있음"},
+  {"id":"CHG-010","type":"feature","scope":"CSV","summary":"내보내기 초안 추가","userImpact":"원장을 다른 도구로 옮길 수 있음"},
+  {"id":"CHG-011","type":"fix","scope":"예산","summary":"경계값 비교 수정","userImpact":"예산과 같은 지출이 초과로 표시되지 않음"},
+  {"id":"CHG-012","type":"docs","scope":"운영","summary":"검증 명령 정리","userImpact":"배포 전 확인 절차가 명확해짐"},
+  {"id":"CHG-013","type":"breaking","scope":"CSV","summary":"날짜 형식을 ISO 8601로 통일","userImpact":"기존 슬래시 날짜는 변환이 필요함","migration":"YYYY-MM-DD 형식으로 변경"},
+  {"id":"CHG-014","type":"feature","scope":"집계","summary":"분기별 합계 추가","userImpact":"분기 지출 추이를 확인할 수 있음"},
+  {"id":"CHG-015","type":"fix","scope":"정렬","summary":"한글 카테고리 순서 안정화","userImpact":"실행 환경마다 표 순서가 달라지지 않음"},
+  {"id":"CHG-016","type":"docs","scope":"보안","summary":"가짜 키 사용 지침 추가","userImpact":"실습 중 비밀값 노출 위험이 줄어듦"},
+  {"id":"CHG-017","type":"feature","scope":"별칭","summary":"카테고리 별칭 매핑 추가","userImpact":"표기가 다른 카테고리를 합칠 수 있음"},
+  {"id":"CHG-018","type":"fix","scope":"숫자","summary":"음수 환불 합산 수정","userImpact":"환불 금액이 총액에 올바르게 반영됨"},
+  {"id":"CHG-019","type":"docs","scope":"실습","summary":"병렬 과제 안내 추가","userImpact":"독립 과제를 쉽게 나눌 수 있음"},
+  {"id":"CHG-020","type":"feature","scope":"지표","summary":"캐시 히트율 계산 예제 추가","userImpact":"세션 효율을 비교할 수 있음"}
+]
+

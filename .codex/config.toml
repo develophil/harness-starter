@@ -1,0 +1,17 @@
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[features]
+hooks = true
+
+[sandbox_workspace_write]
+network_access = false
+
+[agents]
+max_concurrent_threads_per_session = 4
+default_subagent_model = "gpt-6-luna"
+default_subagent_reasoning_effort = "medium"
+
+# ⚠️ 미확인: MCP 서버의 실행 명령 키는 설치 버전에서 확인한 뒤 [mcp_servers.*]를 추가합니다.
+# ⚠️ 미확인: [permissions.*] 베타는 정식화 전까지 sandbox_mode와 병용하지 않습니다.
+

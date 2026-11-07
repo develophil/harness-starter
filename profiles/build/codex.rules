@@ -1,0 +1,7 @@
+# 검증: codex execpolicy check --rules profiles/build/codex.rules -- npm test
+# ⚠️ 미확인: prefix_rule 인자 문법은 설치 버전에서 재검증합니다.
+prefix_rule(pattern = ["npm", "test"], decision = "allow", justification = "프로젝트 테스트")
+prefix_rule(pattern = ["npx", "vitest"], decision = "allow", justification = "단위 테스트")
+prefix_rule(pattern = ["git", "status"], decision = "allow", justification = "변경 조회")
+prefix_rule(pattern = ["git", "diff"], decision = "allow", justification = "변경 조회")
+

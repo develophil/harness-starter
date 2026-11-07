@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep", "Edit", "Write", "Bash(npm test:*)", "Bash(node --check:*)", "Bash(npx vitest:*)", "Bash(head:*)", "Bash(tail:*)"],
+    "deny": ["Read(./.env*)", "Bash(git push*)", "Edit(./_protected/**)", "Write(./_protected/**)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write",
+        "hooks": [{"type": "command", "command": "bash hooks/check-dangerous.sh"}]
+      }
+    ],
+    "Stop": [
+      {"hooks": [{"type": "command", "command": "bash loops/stop-gate.sh"}]}
+    ]
+  }
+}
+

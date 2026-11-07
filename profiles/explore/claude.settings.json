@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep", "Bash(git status)", "Bash(git diff*)"],
+    "deny": ["Edit", "Write", "Bash(git push*)", "Bash(npm install*)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [{"type": "command", "command": "bash hooks/check-dangerous.sh"}]
+      }
+    ]
+  }
+}
+

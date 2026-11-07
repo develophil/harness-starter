@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep", "Edit", "Write", "Bash(npm test)"],
+    "deny": ["Read(./.env*)", "Bash(git push --force*)", "Edit(./_protected/**)", "Write(./_protected/**)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write",
+        "hooks": [{"type": "command", "command": "bash hooks/check-dangerous.sh"}]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [{"type": "command", "command": "bash hooks/log-commands.sh"}]
+      }
+    ]
+  }
+}
+

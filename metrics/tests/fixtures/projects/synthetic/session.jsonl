@@ -1,0 +1,7 @@
+{"type":"user","message":{"role":"user","content":"가상 과제: 테스트를 확인해 주세요."}}
+{"type":"assistant","message":{"id":"synthetic-message-1","usage":{"input_tokens":100,"cache_creation_input_tokens":200,"cache_read_input_tokens":700},"content":[{"type":"text","text":"가상 응답 첫 블록"}]}}
+{"type":"assistant","message":{"id":"synthetic-message-1","usage":{"input_tokens":100,"cache_creation_input_tokens":200,"cache_read_input_tokens":700},"content":[{"type":"text","text":"같은 메시지의 두 번째 블록"}]}}
+{"type":"system","subtype":"stop_hook_summary","hookErrors":["가상 테스트 실패"]}
+{"type":"system","permission_denials":[{"tool_name":"Bash","tool_use_id":"synthetic-denial-1"}]}
+{"type":"assistant","message":{"id":"synthetic-message-2","usage":{"input_tokens":200,"cache_creation_input_tokens":0,"cache_read_input_tokens":800},"content":[{"type":"text","text":"가상 수정 완료"}]}}
+{"type":"system","subtype":"stop_hook_summary","hookErrors":[]}
