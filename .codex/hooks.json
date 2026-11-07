@@ -1,5 +1,5 @@
 {
-  "description": "등록 후 Codex 대화형에서 /hooks로 정의 해시를 신뢰 승인해야 실행됩니다(정의 변경 시 재승인). matcher는 도구 이름 정규식(`Bash`는 공식 문서 확인). ⚠️ 미확인: Edit·Write 이름이 Codex의 apply_patch에 매칭되는지 — 0.160 문서 미확인, 리허설에서 확인.",
+  "description": "등록 후 Codex 대화형에서 /hooks로 정의 해시를 신뢰 승인해야 실행됩니다(정의 변경 시 재승인). matcher는 도구 이름 정규식(`Bash`는 공식 문서 확인). 버전 확인: Edit·Write 이름이 Codex의 apply_patch에 매칭되는지는 설치 버전의 문서에서 확인하세요.",
   "hooks": {
     "PreToolUse": [
       {

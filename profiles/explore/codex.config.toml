@@ -7,5 +7,5 @@ network_access = false
 [features]
 hooks = true
 
-# ⚠️ 미확인: [permissions.*] 베타는 sandbox_mode와 병용하지 않습니다.
+# 버전 확인: [permissions.*] 베타는 sandbox_mode와 병용하지 않습니다.
 

@@ -53,7 +53,7 @@ build의 `Bash(npm test:*)`, `Bash(node --check:*)`, `Bash(npx vitest:*)`는 단
 ## 알려진 함정
 
 - 신뢰 승인하지 않은 폴더에서는 Claude Code가 프로젝트 `.claude/settings.json`의 `permissions.allow`를 무시합니다. 훅·deny가 적용되어도 allow 적용을 뜻하지는 않습니다. 적용한 폴더에서 `claude`를 한 번 대화형으로 열어 폴더 신뢰를 승인하세요.
-- 헤드리스·CI에서는 적용한 폴더에서 설정을 명시합니다: `claude -p --settings .claude/settings.json "작업 내용"`. g3·r2 리허설에서 프로젝트 소스의 allow 무시 경고가 남아도 `--settings`로 전달한 allow는 적용되는 것을 확인했습니다. 사용할 프로필을 먼저 해당 설정 파일에 병합하세요.
+- 헤드리스·CI에서는 적용한 폴더에서 설정을 명시합니다: `claude -p --settings .claude/settings.json "작업 내용"`. 2026년 11월 리허설에서 프로젝트 설정의 allow 무시 경고가 남아도 `--settings`로 전달한 allow는 적용되는 것을 확인했습니다. 사용할 프로필을 먼저 해당 설정 파일에 병합하세요.
 - Stop 게이트는 `HEAD` 대비 `GATE_PATHS`의 변경(스테이징·미추적 포함)이 없으면 테스트를 생략합니다. 기본은 `src tests`이며 스크립트 상단 변수나 환경변수로 바꿀 수 있습니다. Git 저장소가 아니거나 `HEAD`가 없으면 기존처럼 테스트합니다.
 
 ## 참고 링크

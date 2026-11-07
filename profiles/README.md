@@ -8,6 +8,6 @@
 4. 허용 사례와 차단 사례를 각각 실행합니다.
 
 # 확인(2026-10-04 문서): Claude 규칙은 `Tool` 또는 `Tool(specifier)`, Codex `prefix_rule(pattern, decision=allow|prompt|forbidden, justification, match, not_match)`.
-# ⚠️ 미확인: `Read(./.env*)` 글롭 동작은 설치 버전에서 실측합니다.
+# 버전 확인: `Read(./.env*)` 글롭 동작은 설치 버전에서 실측합니다.
 # Codex 프로필에 훅을 넣었다면 적용 후 `/hooks`에서 신뢰 승인합니다. Claude `PermissionRequest` 훅의 판정은 `hookSpecificOutput.decision.behavior`(PreToolUse의 `permissionDecision`과 다름).
-# ⚠️ 미확인: `[permissions.*]` 베타는 정식화 전까지 `sandbox_mode`와 병용하지 않습니다.
+# 버전 확인: `[permissions.*]` 베타는 정식화 전까지 `sandbox_mode`와 병용하지 않습니다.
